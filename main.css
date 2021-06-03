@@ -1,0 +1,73 @@
+body {
+  background-color: #114e8a;
+  padding: 2%;
+  color: white;
+  font-family: "Helvetica", serif;
+}
+
+h1 {
+  letter-spacing: 0.2em;
+}
+
+button {
+  margin-top: 2%;
+  color: black;
+}
+
+.container {
+  width: 50%;
+}
+
+.grid-container {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 155px 155px 155px;
+}
+
+.grid-item {
+  border: 2px solid rgba(255,255,255,0.8);
+  padding: 10%;
+}
+
+.grid-item:hover {
+  cursor: pointer;
+  background-color: #3588b7;
+}
+
+.row1 {
+  border-top: none;
+}
+
+.row3 {
+  border-bottom: none;
+}
+
+.col1 {
+  border-left: none;
+}
+
+.col3 {
+  border-right: none;
+}
+
+.scores h3 {
+  display: inline-block;
+  color: black;
+}
+
+#p2 {
+  float: right;
+}
+
+img {
+  display: none;
+  width: 80%;
+  margin-left: 3%;
+}
+
+.alien {
+  width: 50%;
+  margin-left: 25%;
+}

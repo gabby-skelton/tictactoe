@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tic-Tac-Toe</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class = "container">
+  <h1 class = "text-center text-uppercase">Ninjas vs. Aliens</h1>
+  <div class="grid-container">
+    <div class="grid-item row1 col1 diaL" id = "0" onclick = placeImage(this.id)><img src = "#"></div>
+    <div class="grid-item row1 col2" id = "1" onclick = placeImage(this.id)><img src = "#"></div>
+    <div class="grid-item row1 col3 diaR" id = "2" onclick = placeImage(this.id)><img src = "#"></div>
+    <div class="grid-item row2 col1" id = "3" onclick = placeImage(this.id)><img src = "#"></div>
+    <div class="grid-item row2 col2 diaL diaR" id = "4" onclick = placeImage(this.id)><img src = "#"></div>
+    <div class="grid-item row2 col3" id = "5" onclick = placeImage(this.id)><img src = "#"></div>
+    <div class="grid-item row3 col1 diaR" id = "6" onclick = placeImage(this.id)><img src = "#"></div>
+    <div class="grid-item row3 col2" id = "7" onclick = placeImage(this.id)><img src = "#"></div>
+    <div class="grid-item row3 col3 diaL" id = "8" onclick = placeImage(this.id)><img src = "#"></div>
+  </div>
+
+  <div class = "scores">
+    <h3 id = "p1">Ninjas: <span class = "score">--</span></h3>
+    <h3 id = "p2">Aliens: <span class = "score">--</span></h3>
+  </div>
+
+  <button class = "btn btn-basic" onclick = "replay()">Play Again</button>
+  <button class = "btn btn-basic" onclick = "reset()">Reset</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
