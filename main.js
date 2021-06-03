@@ -104,25 +104,14 @@ function showWinner(winner, line) {
   if(winner == "ninja") {
     ninjaScore++;
     ninjaLabel.innerHTML = "Ninjas: " + ninjaScore;
-    for(var i = 0; i < 3; i++) { line[i].style.background = "#3588b7"; }
-    for(var i = 0; i < 9; i++) {
-      //if image parent is not line, fadeOut
-      var image = images[i];
-      if($(image).parent().hasClass(line)) {
-        $(image).fadeOut("slow");
-      }
+    for(var i = 0; i < 3; i++) { 
+      line[i].style.background = "#3588b7"; 
     }
   } else if(winner == "alien") {
     alienScore++;
     alienLabel.innerHTML = "Aliens: " + alienScore;
-    for(var i = 0; i < 3; i++) { line[i].style.background = "#3588b7"; }
-    for(var i = 0; i < 9; i++) {
-      //if image parent is not line, fadeOut
-      var image = images[i];
-      if($(image).parent().hasClass(line)) {
-        $(image).fadeOut("slow");
-      }
-
+    for(var i = 0; i < 3; i++) { 
+      line[i].style.background = "#3588b7"; 
     }
   }
 }
