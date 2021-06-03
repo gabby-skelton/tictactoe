@@ -95,6 +95,12 @@ function placeImage(selected) {
 }
 
 function showWinner(winner, line) {
+  //"line" is a list of elements with certain class name (row1, col1, diaL, etc.)
+  for(var i = 0; i < 3; i++) {
+    var element = line[i];
+    var searchClass = element.classList.item(i);
+    console.log("Checking for class: " + searchClass);
+  }
   if(winner == "ninja") {
     ninjaScore++;
     ninjaLabel.innerHTML = "Ninjas: " + ninjaScore;
@@ -102,7 +108,7 @@ function showWinner(winner, line) {
     for(var i = 0; i < 9; i++) {
       //if image parent is not line, fadeOut
       var image = images[i];
-      if(!$(image).parent().hasClass(line)) {
+      if($(image).parent().hasClass(line)) {
         $(image).fadeOut("slow");
       }
     }
@@ -113,7 +119,7 @@ function showWinner(winner, line) {
     for(var i = 0; i < 9; i++) {
       //if image parent is not line, fadeOut
       var image = images[i];
-      if(!$(image).parent().hasClass(line)) {
+      if($(image).parent().hasClass(line)) {
         $(image).fadeOut("slow");
       }
 
